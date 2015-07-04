@@ -1,4 +1,4 @@
 <?php 
-//llamo al index
+//llamo al index  fdsafsds
 	header("location: vista/portal/index.php");
 ?> 
