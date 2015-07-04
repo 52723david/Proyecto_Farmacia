@@ -26,7 +26,7 @@
 			function success(position) {  
 				var puntero = new google.maps.MarkerImage(
 					'http://www.anestesiaclinicovalencia.org/wp-content/uploads/2013/11/informacion-paciente.png',
-					new google.maps.Size(1000,1000)
+					new google.maps.Size(100,100)
 				);
 				var mapita = document.createElement('div');  
 				mapita.id = 'mapita';  
@@ -70,7 +70,7 @@
 					<a href="index.php"><img src="images/logo.png"></a>	
 				</div>
 				<div class="logo_login">
-					<a href="index.php"><img src="images/login.png" width="100" heigth="100"></a>
+					<a href="../Login/login.php"><img src="images/login.png" width="100" heigth="100"></a>
 				</div>
 				<div class="buscador">
 					<fieldset class="searchform">

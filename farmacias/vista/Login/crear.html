@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Crear cuenta</title>
+        <meta charset= "UTF-8">
+        <link rel="stylesheet" type="text/css" href="../estilos/estilos.css">
+
+    </head>
+    <body>       
+    <center><h1>Registrate Gratis</h1></center>
+        <div class ="login">
+            <form action ="../Login/controller/crear.php" method ="POST">
+            <fieldset>
+                <legend>Crear cuenta</legend> 
+            <table>
+                <tr>
+                    <td><input title="Es necesario un nombre de usuario" type="text" class ="pass" name ="cedula" placeholder="Cedula"required> </td>
+                </tr>
+                <tr>
+                    <td><input title="Campo obligatorio" class ="pass" type="text" name ="nombre" placeholder="Nombre" required></td>
+                </tr>
+                <tr>
+                     <td><input title="Campo obligatorio" class ="pass" type="text" name ="apellido" placeholder="Apellido" required></td>
+
+                </tr>
+                <tr>
+                    <td><input title="Campo obligatorio" type ="text" name = "usuario" class ="pass" placeholder ="Nombre de usuario" required></td>
+                </tr>
+                <tr>
+                    <td><input title ="Campo obligatorio" class="pass" type ="password" name ="pass1" placeholder="Contraseña" required></td>
+                </tr>
+                <tr>
+                    <td><input title ="Campo obligatorio" class="pass" type ="password" name ="pass2" placeholder="Verificar Contraseña" required></td>
+                </tr>   
+            </table>   
+                <input type ="submit" value =" registrarse"  id ="res">
+              </fieldset>
+            </form>
+        </div>
+    </body>
+</html>
