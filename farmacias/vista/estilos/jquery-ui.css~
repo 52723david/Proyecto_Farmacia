@@ -6,7 +6,6 @@
 
 /* Layout helpers
 ----------------------------------*/
-/*jadshjsdhjdhjbvjnj*/
 .ui-helper-hidden {
 	display: none;
 }

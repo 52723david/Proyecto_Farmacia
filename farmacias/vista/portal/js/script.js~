@@ -3,7 +3,6 @@ jQuery(document).ready(function($) {
  
          
 // PARAMETROS OPCIONALES QUE NOS OFRECE EL PLUGIN
-/*bxbjdjsdfnkgnksgnkdfnknmkgf*/
 width : 1000,
 height : 350,	
  

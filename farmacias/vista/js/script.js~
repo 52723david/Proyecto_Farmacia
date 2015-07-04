@@ -3,10 +3,9 @@ jQuery(document).ready(function($) {
  
          
 // PARAMETROS OPCIONALES QUE NOS OFRECE EL PLUGIN
-/*bxbjdjsdfnkgnksgnkdfnknmkgf*/
-width : 1000,
-height : 350,	
- 
+width : 1080,
+height : 350,
+
 // animation values
 animtype : 'fade', // accepts 'fade' or 'slide'
 animduration : 500, // how fast the animation are
