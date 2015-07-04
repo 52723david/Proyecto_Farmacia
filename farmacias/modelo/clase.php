@@ -8,7 +8,6 @@
 	<link href="estilos/style.css" rel="stylesheet" />
 </head>
 <body>
-
 <?php
 //header('Content-Type: text/html; charset=ISO-8859-1');
 class clase_mysql{
@@ -75,14 +74,16 @@ class clase_mysql{
 		echo "<table id='card-table' class='table' align='center' whidth=100% aligen='center' border=1>";
 		echo "<tr>";
 		for ($i=0; $i < $this->numcampos() ; $i++) { 
-			echo "<th>".$this->nombrecampo($i)."</th>";
+			if ($this->nombrecampo($i)!="Id" and $this->nombrecampo($i)!="Foto" and $this->nombrecampo($i)!="Farmacia") {
+				echo "<th>".$this->nombrecampo($i)."</th>";
+			}
 		}
 		echo "<th></th>";
 		echo "</tr>";
 		while (@$row=mysql_fetch_array($this->consulta_ID)) {
 			echo "<tr>";
 			for ($i=0; $i < $this->numcampos(); $i++) {
-				if ($this->nombrecampo($i)!=$f) {
+				if ($this->nombrecampo($i)!=$f and $this->nombrecampo($i)!="Id" and $this->nombrecampo($i)!="Foto" and $this->nombrecampo($i)!="Farmacia") {
 				 	echo "<td>".$row[$i]."</td>";
 				 } 
 				if ($this->nombrecampo($i)==$f) {
@@ -159,7 +160,6 @@ class clase_mysql{
 					if ($this->nombrecampo($i)!="Usuario" and $this->nombrecampo($i)!="Id" and $this->nombrecampo($i)!="Foto" and $this->nombrecampo($i)!="Descripcion" and $this->nombrecampo($i)!="Zona" and $this->nombrecampo($i)!="Provincia" and $this->nombrecampo($i)!="Canton" and $this->nombrecampo($i)!="Latitud" and $this->nombrecampo($i)!="Longitud") {
 						echo "<td>".$row[$i]."</td>";
 					}
-				 	
 				 } 
 				$ID=$row[0];
 				$CE=$row[13];
@@ -171,7 +171,7 @@ class clase_mysql{
 			}
 			$user=end( $row );
 			$nom=$row[1];
-			//echo "$user";
+			//echo "$ID<br>";
 			$tabla = mysql_field_table ( $this->consulta_ID, 0); 
 			//echo "<td><a href='../Administrador/administrador.php?id=$row[0]&var=actualizarFarmacia&va=$user&tab=$tabla'>Actualizar</a></td>";
 			//echo "<td><a href='../../controller/admin1.php?id=$row[0]&va=$user&var=borrarfarmacia&tab=$tabla&nomb=$nom'>Borrar</a></td>";
@@ -182,7 +182,7 @@ class clase_mysql{
 					<li><a href="">Opciones</a>
 						<ul>
 						<?php
-							echo "<li><a href=''>Productos</a>";
+							echo "<li><a href='administrador.php?id=$ID&var=productos&va=$CE'>Productos</a>";
 							echo "<li><a href=''>Turnos</a>";
 							echo "<li><a href='../Administrador/administrador.php?var=detalle&r=$ID&t=$tabla&va=$CE'>Detalles</a>";
 							echo "<li><a href='../Administrador/administrador.php?id=$row[0]&var=actualizarFarmacia&va=$user&tab=$tabla'>Actualizar</a>";

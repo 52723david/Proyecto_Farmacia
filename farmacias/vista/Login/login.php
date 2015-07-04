@@ -1,6 +1,5 @@
 <html>
 <head>
-
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <script type="text/javascript" src="js/jquery.js"></script>
     <link rel="stylesheet" type="text/css" href="estilos/estilos.css">
@@ -13,29 +12,19 @@
       $(".ventana").slideUp("fast");
     }
     </script>
-
-
-    
-
     <meta charset="UTF-8">
-    <title>Ingresar</title>
-    
-    
+    <title>Ingresar</title> 
     <link rel="stylesheet" href="../estilos/style.css">
-
     <link rel='stylesheet prefetch' href='http://daneden.github.io/animate.css/animate.min.css'>
-<link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Roboto:400,100,400italic,700italic,700'>
-<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
-
-        <link rel="stylesheet" href="../estilos/style.css">
-
-</head>
+    <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Roboto:400,100,400italic,700italic,700'>
+    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="../estilos/style.css">
+    </head>
 <?php
 session_start();
 session_destroy();
 ?>
 <body>
-
 <div class='info'>
 </div>
 <div class='form aniamted bounceIn'>
@@ -45,10 +34,6 @@ session_destroy();
   </div>
   <div class='login'>
     <h2>Accede a tu cuenta</h2>
-
-
-
-
     <form action="../../controlador/admin1.php?va=loguin" method="post" name="form">
      <table>
           <tr>
@@ -70,20 +55,12 @@ session_destroy();
         <tr>
             <td></td>
             <button><input type="submit" id="boton" name="btn_enviar" value="Enviar"></button>
-          </tr>
-
-                       
+          </tr>                 
      <!-- <button>Login</button>-->
     </form>
   </div>
-
- 
-
-
-
   <div class='register'>
     <h2>Crear una cuenta</h2>
-   
     <form action="../../controller/admin1.php?va=registrarse" method="post" name="form">
         <table>
           <tr>
@@ -120,12 +97,10 @@ session_destroy();
             <td><input type="password" name="Password" placeholder="Password" required></td>
           </tr>
         </table>  
-
         <tr>
             <td></td>
             <button><input type="submit" id="boton" name="btn_enviar" value="Enviar"></button>
           </tr>
-  
       </form>
   </div>
   <footer>

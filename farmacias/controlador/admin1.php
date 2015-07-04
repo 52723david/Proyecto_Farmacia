@@ -53,6 +53,8 @@
   		extract($_GET);
   		$var1=$_GET["v"];
   		$var2=$_GET["f"];
+  		$var=$_GET["idd"];
+  		//echo "$var1 $var2 $var<br>";
   		$actualizar="insert into ".$var1." values (' '";
   		$miconexion=new clase_mysql;
   		$miconexion->conectar($db_name, $db_host, $db_user, $db_pasword);
@@ -74,7 +76,12 @@
   		$actualizar=$actualizar.")";
 		//echo "$actualizar";
   		$miconexion->consulta($actualizar);
-  		header("location: ../vista/Administrador/administrador.php?va=$var2&var=ver");
+  		if ($var1!="productos") {
+  			header("location: ../vista/Administrador/administrador.php?va=$var2&var=ver");
+  		}
+  		if ($var1=="productos") {
+  			header("location: ../vista/Administrador/administrador.php?va=$var2&var=productos&id=$var");
+  		}
 	}
 	if (@$_GET["va"]=="actualizar") {
 		extract($_POST);
