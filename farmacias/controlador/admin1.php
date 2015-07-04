@@ -19,7 +19,6 @@
 		$query="select * from administrador where Usuario='$usuario1' and Password='$clave1'";
 		$ndf->consulta($query);
 		$ndf->validar($_POST['tipo']);
-//fdgdsgdfg
 	}
 	//el usuario crea cuenta
 	if (@$_GET["va"]=="registrarse") {

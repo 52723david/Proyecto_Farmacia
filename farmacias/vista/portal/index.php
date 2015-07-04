@@ -1,14 +1,3 @@
-/*
-
-Responsive Mobile Menu v1.0
-Plugin URI: responsivemobilemenu.com
-
-Author: Sergio Vitov
-Author URI: http://xmacros.com
-
-License: CC BY 3.0 http://creativecommons.org/licenses/by/3.0/
-
-*/
 <html>
 	<head>
 		<html lang="es">

@@ -14,5 +14,4 @@
 		ORDER BY distancia ASC";
     $miconexion->consulta($sql);
     //http://www.michael-pratt.com/blog/7/Encontrar-Lugares-cercanos-con-MySQL-y-PHP/
-//hjhsajdhjsajdf
 ?>

@@ -23,7 +23,6 @@
 <?php
 session_start();
 session_destroy();
-/*hhsdfhjdshjgvsjbjfjvdfjfvnjdf*/
 ?>
 <body>
 <div class='info'>

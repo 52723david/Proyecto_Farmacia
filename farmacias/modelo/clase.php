@@ -9,7 +9,6 @@
 </head>
 <body>
 <?php
-//bjcabsajdjhasjvbdfsj
 //header('Content-Type: text/html; charset=ISO-8859-1');
 class clase_mysql{
 	var $baseDatos;
