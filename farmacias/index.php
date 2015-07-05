@@ -1,4 +1,4 @@
 <?php 
-//llamo al index
+//Llamamos al index del portal
 	header("location: vista/portal/index.php");
 ?> 
